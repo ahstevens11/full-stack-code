@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  html {
+    font-size: 24px;
+    font-family: 'Unica One', cursive;
+  }
+  
+  #app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1rem 0;
+  }
+  
+  #app h1 {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 8px;
+  }
+
+  .calculator {
+      background-color: darkgray;
+      border: 2px solid yellow;
+      border-radius: 15px;
+      display: grid;
+      overflow: hidden;
+      padding: 15px 15px 15px;
+      grid-template-rows: 20px 180px 1fr;
+      height: 700px;
+      width: 480px;
+      box-shadow: 3px 4px 3px black;
+  }
+
+  .display {
+      background-color: darkcyan;
+      border: 2px solid yellow;
+      display: grid;
+      grid-template-rows: 1fr 1fr 2fr;
+      grid-template-columns: repeat(5, 1fr);
+      border-radius: 7px;
+      padding: 5px;
+      margin: 10px;
+  }
+
+  .held-value {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  .next-operation {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+  }
+
+  .next-value {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+  }
+
+  .controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: var(--gap);
+  }
+
+  .memory {
+      display: grid;
+      grid-gap: var(--gap);
+      grid-column: 1 / 4;
+      grid-row: 1;
+      grid-template-columns: 2fr 3fr;
+      padding-bottom: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+  }
+
+  .clear-all {
+      margin: 10px;
+      border-radius: 7px;
+      background-color: yellow;
+      border: 1px solid black;
+  }
+
+  .clear-entry {
+    margin: 10px;
+    border-radius: 7px;
+    background-color: yellow;
+    border: 1px solid black;
+  }
+ 
+  .operations {
+      display: grid;
+      grid-gap: var(--gap);
+      grid-column: 4 / 5;
+      grid-row: 1 / 6;
+      grid-template-rows: repeat(6, 1fr) 1.5fr;
+  }
+
+  .operations button {
+    margin: 15px;
+    border-radius: 7px;
+    background-color: orange;
+    border: 1px solid black;
+  }
+
+  .digits {
+      display: grid;
+      grid-gap: var(--gap);
+      grid-row: 2 / 6;
+      grid-column: 1 / 4;
+      grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+  }
+
+  .digits button {
+    margin: 15px;
+    border-radius: 7px;
+    border: 1px solid black;
+  }
+
+  .zero {
+      grid-column: 2 / 4;
+  }
+
+  #equals {
+    background-color: red;
+  }
+
+  button {
+      font-size: 20px;
+      font-weight: bold;
+      box-shadow: 3px 4px 3px black;
+  }
+
+  .held-label {
+    font-size: 20px;
+  }
+
+  .calcName {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+  }
+

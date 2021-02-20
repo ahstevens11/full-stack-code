@@ -1,0 +1,19 @@
+body {
+    background-color: lightslategray;
+}
+h1 {
+    text-align: center;
+}
+
+.column {
+    text-align: center;
+    float: left;
+    width: 32.33%;
+    padding: 5px;
+}
+
+.row: :after {
+    content: "";
+    clear: both;
+    display: table;
+}
